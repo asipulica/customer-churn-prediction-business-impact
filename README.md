@@ -32,5 +32,23 @@ At this threshold: 732 true negatives, 738 true positives, only 14 false positiv
 
 This means the Random Forest, tuned to a 0.51 threshold, correctly classifies 98% of customers, with very few errors in either direction.
 
-Summary for Report
+
 The Random Forest model significantly outperforms Logistic Regression for predicting Netflix customer churn. The analysis reveals that engagement metrics — particularly watch hours and days since last login — are the strongest predictors of churn, far more so than subscription price. Customers who churn watch approximately 66% fewer hours and log in half as frequently as those who stay. The optimised model achieves a 98% F1 score, making it highly reliable for identifying at-risk customers before they cancel.
+CLV: cutomer life time 
+Discount: the offer to the customer to continue their subscription
+Success rate: the percent of people who accepted the offer
+
+### Jargon
+CLV = £240
+Discount = £10
+Subscription price = £20
+success_rate = 0.30   (30%)
+
+### Calculations
+saved = TP × success_rate
+saved = 738 × 0.30 ≈ 221
+221 × 240 = £53,040
+752 × 10 = £7,520
+53,040 − 7,520 = £45,520
+If company has 100,000 users:
+≈ £3M+ impact
